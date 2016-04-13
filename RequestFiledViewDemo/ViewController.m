@@ -1,27 +1,81 @@
 //
 //  ViewController.m
-//  RequestFiledViewDemo
+//  360
 //
-//  Created by tztddong on 16/4/13.
+//  Created by tztddong on 16/3/21.
 //  Copyright © 2016年 dongjiangpeng. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "RequestFiledView.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
+{
+    RequestFiledView *_requestView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"主页";
 }
+//使用默认的提示title和图片
+- (IBAction)one:(id)sender {
+    
+    _requestView = [RequestFiledView configViewWithFrame:self.view.bounds Type:2 selectBlock:^{
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+            NSLog(@"刷新");
+            if (_requestView) {
+
+                [_requestView removeFromSuperview];
+                _requestView = nil;
+            }
+    }];
+    
+    [self.view addSubview:_requestView];
+}
+//自定义提示title 使用默认图片
+- (IBAction)two:(id)sender {
+    
+    _requestView = [RequestFiledView configViewWithFrame:self.view.bounds Title:@"自定义文字" Type:2 selectBlock:^{
+            NSLog(@"刷新");
+            if (_requestView) {
+                
+                [_requestView removeFromSuperview];
+                _requestView = nil;
+            }
+    }];
+    [self.view addSubview:_requestView];
+}
+//使用默认title 自定义图片
+- (IBAction)three:(id)sender {
+    
+    _requestView = [RequestFiledView configViewWithFrame:self.view.bounds ImageName:@"wuwang_wuwangluotubiao" Type:2 selectBlock:^{
+        NSLog(@"刷新");
+        if (_requestView) {
+            
+            [_requestView removeFromSuperview];
+            _requestView = nil;
+        }
+    }];
+    [self.view addSubview:_requestView];
+    
+}
+//自定义提示title 自定义图片
+- (IBAction)four:(id)sender {
+    
+    _requestView = [RequestFiledView configViewWithFrame:self.view.bounds Title:@"自定义两个" ImageName:@"wuwang_wuwangluotubiao" Type:2 selectBlock:^{
+        NSLog(@"刷新");
+        if (_requestView) {
+            
+            [_requestView removeFromSuperview];
+            _requestView = nil;
+        }
+    }];
+    [self.view addSubview:_requestView];
 }
 
 @end
