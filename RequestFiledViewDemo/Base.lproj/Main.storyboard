@@ -18,33 +18,73 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJq-qY-9hE">
-                                <rect key="frame" x="28" y="98" width="30" height="30"/>
-                                <state key="normal" title="1"/>
+                                <rect key="frame" x="63" y="98" width="30" height="30"/>
+                                <state key="normal" title="默认"/>
                                 <connections>
                                     <action selector="one:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hCC-kO-lQa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GW-rG-l4j">
-                                <rect key="frame" x="28" y="147" width="30" height="30"/>
-                                <state key="normal" title="2"/>
+                                <rect key="frame" x="43" y="147" width="71" height="30"/>
+                                <state key="normal" title="自定义title"/>
                                 <connections>
                                     <action selector="two:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DY9-ts-5Iu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmL-K0-OyR">
-                                <rect key="frame" x="28" y="206" width="30" height="30"/>
-                                <state key="normal" title="3"/>
+                                <rect key="frame" x="41" y="206" width="75" height="30"/>
+                                <state key="normal" title="自定义图片"/>
                                 <connections>
                                     <action selector="three:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gF7-9i-Zq4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEc-Pq-Uag">
-                                <rect key="frame" x="28" y="271" width="30" height="30"/>
-                                <state key="normal" title="4"/>
+                                <rect key="frame" x="20" y="271" width="116" height="30"/>
+                                <state key="normal" title="自定义title和图片"/>
                                 <connections>
                                     <action selector="four:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1GY-Us-93A"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNB-Ti-cNI">
+                                <rect key="frame" x="143" y="98" width="30" height="30"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="oneone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wwy-Up-MdM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSB-OZ-mPB">
+                                <rect key="frame" x="143" y="147" width="30" height="30"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="twotwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JC1-0e-4yy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFQ-rF-9oL">
+                                <rect key="frame" x="143" y="206" width="30" height="30"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="threethree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ugb-9I-Nwo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AnW-0d-Qzu">
+                                <rect key="frame" x="143" y="271" width="30" height="30"/>
+                                <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="fourfour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OyU-mq-f1t"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="无内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeS-zq-4Td">
+                                <rect key="frame" x="41" y="321" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="无网络" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weL-aY-um6">
+                                <rect key="frame" x="126" y="321" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -52,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="415"/>
+            <point key="canvasLocation" x="386" y="401"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hRV-Fd-ZF7">
